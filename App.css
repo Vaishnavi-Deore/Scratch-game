@@ -1,0 +1,99 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f7fa; 
+}
+
+
+.app {
+  display: flex;
+  height: 100vh; 
+  width: 100vw; 
+}
+
+
+.sidebar {
+  padding: 20px;
+  width: 200px;
+  background-color: #66bb6a; 
+  border-right: 5px solid #388e3c; 
+  border-radius: 0 20px 20px 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+.playground {
+  flex-grow: 1; 
+  position: relative;
+  background-image: url('https://cdn.pixabay.com/photo/2016/12/06/18/27/grass-1882637_960_720.jpg'); 
+  background-size: cover;
+  background-position: center;
+  border: 6px solid #388e3c; 
+  border-radius: 0; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.cat {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border: 3px solid #8bc34a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cat:hover {
+  transform: rotate(10deg);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
